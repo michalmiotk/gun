@@ -1,0 +1,3 @@
+python3 demo.py --video-input /glock/skladanka.mp4  --output /glock/out2.mp4 --config-file /glock/tboard_logs/weapons/config.yml --opts MODEL.WEIGHTS /glock/tboard_logs/weapons/model_final.pth
+
+
