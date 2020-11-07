@@ -37,8 +37,8 @@ ENV TORCH_CUDA_ARCH_LIST="${TORCH_CUDA_ARCH_LIST}"
 RUN pip install --user -e detectron2_repo
 ADD  app /app
 RUN pip install -r /app/requirements.txt
-EXPOSE 8501
+EXPOSE 8080
 # Set a fixed model cache directory.
 ENV FVCORE_CACHE="/tmp"
 WORKDIR /app
-ENTRYPOINT export LC_ALL=C.UTF-8 && export LANG=C.UTF-8 && streamlit run app.py
+ENTRYPOINT export LC_ALL=C.UTF-8 && export LANG=C.UTF-8 && streamlit run app.py --server.port 8080
