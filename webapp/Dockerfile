@@ -41,4 +41,4 @@ EXPOSE 80
 # Set a fixed model cache directory.
 ENV FVCORE_CACHE="/tmp"
 WORKDIR /app
-ENTRYPOINT export LC_ALL=C.UTF-8 && export LANG=C.UTF-8 && streamlit run app.py --server.port 80
+ENTRYPOINT export LC_ALL=C.UTF-8 && export LANG=C.UTF-8 && streamlit run app.py --server.port 8080
