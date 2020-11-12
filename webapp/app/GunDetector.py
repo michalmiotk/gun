@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 import streamlit as st
+import urllib
 
 from detectron2 import model_zoo
 from detectron2.engine import DefaultPredictor
@@ -20,19 +21,27 @@ def initialization():
         
     """
     cfg = get_cfg()
-    # Force model to operate within CPU, erase if CUDA compatible devices ara available
     cfg.MODEL.DEVICE = 'cpu'
     # Add project-specific config (e.g., TensorMask) here if you're not running a model in detectron2's core library
     cfg.merge_from_file(model_zoo.get_config_file("COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml"))
     # Set threshold for this model
     cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.5  
     # Find a model from detectron2's model zoo. You can use the https://dl.fbaipublicfiles... url as well
-    cfg.MODEL.WEIGHTS = model_zoo.get_checkpoint_url("COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml")
+    cfg.MODEL.WEIGHTS = '/model_final_280758.pkl'
     # Initialize prediction model
     predictor = DefaultPredictor(cfg)
 
     return cfg, predictor
 
+@st.cache
+def url_to_image(url):
+	# download the image, convert it to a NumPy array, and then read
+	# it into OpenCV format
+	resp = urllib.request.urlopen(url)
+	image = np.asarray(bytearray(resp.read()), dtype="uint8")
+	image = cv2.imdecode(image, cv2.IMREAD_COLOR)
+	# return the image
+	return image
 
 @st.cache
 def inference(predictor, img):
@@ -89,24 +98,38 @@ def discriminate(outputs, classes_to_detect):
 
     return outputs
 
+def predict(img, predictor, cfg):
+    outputs = inference(predictor, img)
+    out_image = output_image(cfg, img, outputs)
+    st.image(out_image, caption='Processed Image', use_column_width=True)
 
 def main():
+    images_and_urls = {'':'', 'naked_gun':'https://fwcdn.pl/onph/867323/2013/57039_1.6.jpg', '007':'https://filmypolskie888.files.wordpress.com/2014/02/adb9e-07zglossie4.jpg'}
     # Initialization
     cfg, predictor = initialization()
 
     # Streamlit initialization
-    st.title("Instance Segmentation")
-
+    st.title("Instance Segmentation GUN and People")
+    url_input = st.text_input("paste photot url", 'https://lwlies.com/wp-content/uploads/2017/07/leon-the-professional-1108x0-c-default.jpg')
+    if st.button('predict based on url') and url_input is not None:
+        img = url_to_image(url_input)
+        predict(img, predictor, cfg)
+    
+    option = st.selectbox('How would you like to be contacted?',tuple(images_and_urls.keys()))
+    if option is not None and len(option):
+        img = url_to_image(images_and_urls[option])
+        predict(img, predictor, cfg)
+    
     # Retrieve image
     uploaded_img = st.file_uploader("Choose an image...", type=['jpg', 'jpeg', 'png'])
+
     if uploaded_img is not None:
         file_bytes = np.asarray(bytearray(uploaded_img.read()), dtype=np.uint8)
         img = cv2.imdecode(file_bytes, 1)
-        # Detection code
-        outputs = inference(predictor, img)
-        out_image = output_image(cfg, img, outputs)
-        st.image(out_image, caption='Processed Image', use_column_width=True)        
+        predict(img, predictor, cfg)
 
-
+    st.video('https://www.youtube.com/watch?v=FAx2lqds5Mg') 
+    st.markdown('https://github.com/michalmiotk/gun')
+    st.text('Made by Michał Miotk & Kamil Orłow')
 if __name__ == '__main__':
     main()
