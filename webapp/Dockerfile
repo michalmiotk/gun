@@ -13,7 +13,9 @@ RUN pip install -U 'git+https://github.com/cocodataset/cocoapi.git#subdirectory=
 # Detectron2 - CPU copy
 RUN python -m pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cpu/index.html
 RUN apt install -y wget
-ADD  app /app
+ADD app /app
+ADD ../config.yml /config.yml
+ADD ../model.pth /model.pth 
 RUN wget https://dl.fbaipublicfiles.com/detectron2/COCO-Detection/faster_rcnn_R_50_FPN_3x/137849458/model_final_280758.pkl -O /model_final_280758.pkl
 RUN pip install -r /app/requirements.txt
 EXPOSE 80

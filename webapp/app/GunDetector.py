@@ -23,11 +23,11 @@ def initialization():
     cfg = get_cfg()
     cfg.MODEL.DEVICE = 'cpu'
     # Add project-specific config (e.g., TensorMask) here if you're not running a model in detectron2's core library
-    cfg.merge_from_file(model_zoo.get_config_file("COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml"))
+    cfg.merge_from_file('/config.yml')
     # Set threshold for this model
     cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.5  
     # Find a model from detectron2's model zoo. You can use the https://dl.fbaipublicfiles... url as well
-    cfg.MODEL.WEIGHTS = '/model_final_280758.pkl'
+    cfg.MODEL.WEIGHTS = '/model.pth'
     # Initialize prediction model
     predictor = DefaultPredictor(cfg)
 
