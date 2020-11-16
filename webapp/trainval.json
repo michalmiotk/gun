@@ -1,0 +1,9 @@
+{"categories" : [{"supercategory": "person","id": 2,"name": "person"},
+    {"supercategory": "weapon","id": 1,"name": "weapon"}]
+    , "images": [{
+        "file_name": "0.png",
+        "height": 600,
+        "width": 800,
+        "id": 0
+      }], "annotations":[] 
+}

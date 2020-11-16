@@ -8,6 +8,7 @@ from detectron2.engine import DefaultPredictor
 from detectron2.config import get_cfg
 from detectron2.utils.visualizer import Visualizer
 from detectron2.data import MetadataCatalog, DatasetCatalog
+from detectron2.data.datasets import register_coco_instances
 
 
 @st.cache(persist=True)
@@ -20,10 +21,12 @@ def initialization():
             by the model.
         
     """
+    
     cfg = get_cfg()
-    cfg.MODEL.DEVICE = 'cpu'
+    
     # Add project-specific config (e.g., TensorMask) here if you're not running a model in detectron2's core library
     cfg.merge_from_file('/config.yml')
+    cfg.MODEL.DEVICE = 'cpu'
     # Set threshold for this model
     cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.5  
     # Find a model from detectron2's model zoo. You can use the https://dl.fbaipublicfiles... url as well
@@ -48,8 +51,11 @@ def inference(predictor, img):
     return predictor(img)
 
 
-@st.cache
+
 def output_image(cfg, img, outputs):
+    if not 'weapons' in DatasetCatalog.list():
+        register_coco_instances("weapons", {}, "/trainval.json", "/images")
+        DatasetCatalog.get("weapons")
     v = Visualizer(img[:, :, ::-1], MetadataCatalog.get(cfg.DATASETS.TRAIN[0]), scale=1.2)
     out = v.draw_instance_predictions(outputs["instances"].to("cpu"))
     processed_img = out.get_image()
