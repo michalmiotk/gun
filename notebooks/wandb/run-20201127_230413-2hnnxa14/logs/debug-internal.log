@@ -1,0 +1,447 @@
+2020-11-27 23:04:14,285 INFO    MainThread:547 [internal.py:wandb_internal():63] W&B internal server running at pid: 547
+2020-11-27 23:04:14,288 DEBUG   HandlerThread:547 [handler.py:handle_request():55] handle_request: check_version
+2020-11-27 23:04:14,288 INFO    WriterThread:547 [datastore.py:open_for_write():76] open: /glock/gun/notebooks/wandb/run-20201127_230413-2hnnxa14/run-2hnnxa14.wandb
+2020-11-27 23:04:14,288 DEBUG   SenderThread:547 [sender.py:send():90] send: header
+2020-11-27 23:04:14,289 DEBUG   SenderThread:547 [sender.py:send():90] send: request
+2020-11-27 23:04:14,289 DEBUG   SenderThread:547 [sender.py:send_request():99] send_request: check_version
+2020-11-27 23:04:14,291 DEBUG   Thread-4  :547 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): pypi.org:443
+2020-11-27 23:04:14,363 DEBUG   Thread-4  :547 [connectionpool.py:_make_request():442] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 51947
+2020-11-27 23:04:14,388 DEBUG   SenderThread:547 [sender.py:send():90] send: run
+2020-11-27 23:04:14,392 DEBUG   SenderThread:547 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=/glock/gun, universal_newlines=False, shell=None, istream=<valid stream>)
+2020-11-27 23:04:14,401 DEBUG   SenderThread:547 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 23:04:14,607 DEBUG   SenderThread:547 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 23:04:14,612 DEBUG   HandlerThread:547 [handler.py:handle_request():55] handle_request: run_start
+2020-11-27 23:04:14,614 INFO    SenderThread:547 [dir_watcher.py:__init__():165] watching files in: /glock/gun/notebooks/wandb/run-20201127_230413-2hnnxa14/files
+2020-11-27 23:04:14,614 INFO    SenderThread:547 [sender.py:_start_run_threads():490] run started: 2hnnxa14 with start time 1606518253
+2020-11-27 23:04:14,614 DEBUG   SenderThread:547 [sender.py:send():90] send: summary
+2020-11-27 23:04:14,614 INFO    SenderThread:547 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-27 23:04:14,625 DEBUG   HandlerThread:547 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=/glock/gun, universal_newlines=False, shell=None, istream=<valid stream>)
+2020-11-27 23:04:14,630 DEBUG   HandlerThread:547 [cmd.py:execute():719] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/glock/gun, universal_newlines=False, shell=None, istream=None)
+2020-11-27 23:04:14,665 DEBUG   SenderThread:547 [sender.py:send():90] send: files
+2020-11-27 23:04:14,665 INFO    SenderThread:547 [sender.py:_save_file():568] saving file wandb-metadata.json with policy now
+2020-11-27 23:04:14,671 DEBUG   HandlerThread:547 [handler.py:handle_request():55] handle_request: status
+2020-11-27 23:04:14,672 DEBUG   Thread-11 :547 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 23:04:14,672 DEBUG   SenderThread:547 [sender.py:send():90] send: request
+2020-11-27 23:04:14,672 DEBUG   SenderThread:547 [sender.py:send_request():99] send_request: status
+2020-11-27 23:04:14,672 DEBUG   HandlerThread:547 [handler.py:handle_request():55] handle_request: pause
+2020-11-27 23:04:14,674 INFO    HandlerThread:547 [handler.py:handle_request_pause():226] stopping system metrics thread
+2020-11-27 23:04:14,674 DEBUG   SenderThread:547 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 23:04:14,745 DEBUG   HandlerThread:547 [handler.py:handle_request():55] handle_request: resume
+2020-11-27 23:04:14,745 INFO    HandlerThread:547 [handler.py:handle_request_resume():221] starting system metrics thread
+2020-11-27 23:04:14,746 DEBUG   HandlerThread:547 [handler.py:handle_request():55] handle_request: pause
+2020-11-27 23:04:14,746 INFO    HandlerThread:547 [handler.py:handle_request_pause():226] stopping system metrics thread
+2020-11-27 23:04:14,759 DEBUG   HandlerThread:547 [handler.py:handle_request():55] handle_request: resume
+2020-11-27 23:04:14,759 INFO    HandlerThread:547 [handler.py:handle_request_resume():221] starting system metrics thread
+2020-11-27 23:04:14,759 DEBUG   HandlerThread:547 [handler.py:handle_request():55] handle_request: pause
+2020-11-27 23:04:14,759 INFO    HandlerThread:547 [handler.py:handle_request_pause():226] stopping system metrics thread
+2020-11-27 23:04:14,766 DEBUG   HandlerThread:547 [handler.py:handle_request():55] handle_request: resume
+2020-11-27 23:04:14,766 INFO    HandlerThread:547 [handler.py:handle_request_resume():221] starting system metrics thread
+2020-11-27 23:04:14,766 DEBUG   HandlerThread:547 [handler.py:handle_request():55] handle_request: pause
+2020-11-27 23:04:14,766 INFO    HandlerThread:547 [handler.py:handle_request_pause():226] stopping system metrics thread
+2020-11-27 23:04:14,778 DEBUG   HandlerThread:547 [handler.py:handle_request():55] handle_request: resume
+2020-11-27 23:04:14,779 INFO    HandlerThread:547 [handler.py:handle_request_resume():221] starting system metrics thread
+2020-11-27 23:04:14,860 DEBUG   SenderThread:547 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 23:04:14,860 DEBUG   Thread-11 :547 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 23:04:14,863 DEBUG   SenderThread:547 [sender.py:send():90] send: stats
+2020-11-27 23:04:14,864 DEBUG   SenderThread:547 [sender.py:send():90] send: stats
+2020-11-27 23:04:14,865 DEBUG   SenderThread:547 [sender.py:send():90] send: stats
+2020-11-27 23:04:14,865 DEBUG   SenderThread:547 [sender.py:send():90] send: stats
+2020-11-27 23:04:14,869 DEBUG   Thread-11 :547 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-27 23:04:15,262 DEBUG   Thread-11 :547 [connectionpool.py:_make_request():442] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/miotk/weapons/2hnnxa14/wandb-metadata.json?Expires=1606604654&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=XVygbt6hpzLQ4FT6koPRvLo%2Bvp05LKRfZuKMwN4JhiiEKrNEPtDrAwL80172HuPBnrEgaRA1SKSK1ooxeb%2FflyaqOOMpE7EbuFrNUx0PUlwPbGhddCMjbSrEgo1hlCSu02Pk0zwUjyPCYMTfdhlCT6lXmVVyQsCD7OJMcI7%2BHfDwM4vwv1JnborsJEn0%2BEafQ91S1NYScCXuxv99Fh7lBoMa6FzCg1rB2CzXMZl9T2ncjJXEeM8nyw%2BZvydY4CcWmSVP6%2BfaDKujo3sA4QSCr464aoJfTSfQdWIevaOxgOFu8pAkPQX%2FIXr6QU9UefK7wJQnt9mgJpbMSIE1d2O6dg%3D%3D HTTP/1.1" 200 0
+2020-11-27 23:04:15,264 INFO    Thread-11 :547 [upload_job.py:push():131] Uploaded file /tmp/tmp0k87dgorwandb/2wf2i3zd-wandb-metadata.json
+2020-11-27 23:04:15,616 INFO    Thread-8  :547 [dir_watcher.py:_on_file_created():213] file/dir created: /glock/gun/notebooks/wandb/run-20201127_230413-2hnnxa14/files/wandb-summary.json
+2020-11-27 23:04:15,617 INFO    Thread-8  :547 [dir_watcher.py:_on_file_created():213] file/dir created: /glock/gun/notebooks/wandb/run-20201127_230413-2hnnxa14/files/requirements.txt
+2020-11-27 23:04:15,617 INFO    Thread-8  :547 [dir_watcher.py:_on_file_created():213] file/dir created: /glock/gun/notebooks/wandb/run-20201127_230413-2hnnxa14/files/output.log
+2020-11-27 23:04:15,617 INFO    Thread-8  :547 [dir_watcher.py:_on_file_created():213] file/dir created: /glock/gun/notebooks/wandb/run-20201127_230413-2hnnxa14/files/wandb-metadata.json
+2020-11-27 23:04:16,774 DEBUG   Thread-5  :547 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 23:04:16,995 DEBUG   Thread-5  :547 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/miotk/weapons/2hnnxa14/file_stream HTTP/1.1" 200 None
+2020-11-27 23:04:17,615 INFO    Thread-8  :547 [dir_watcher.py:_on_file_modified():226] file/dir modified: /glock/gun/notebooks/wandb/run-20201127_230413-2hnnxa14/files/output.log
+2020-11-27 23:04:18,109 DEBUG   SenderThread:547 [sender.py:send():90] send: stats
+2020-11-27 23:04:20,291 DEBUG   Thread-5  :547 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/miotk/weapons/2hnnxa14/file_stream HTTP/1.1" 200 None
+2020-11-27 23:04:22,540 DEBUG   SenderThread:547 [sender.py:send():90] send: stats
+2020-11-27 23:04:22,723 DEBUG   Thread-5  :547 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/miotk/weapons/2hnnxa14/file_stream HTTP/1.1" 200 None
+2020-11-27 23:04:26,974 DEBUG   SenderThread:547 [sender.py:send():90] send: stats
+2020-11-27 23:04:27,170 DEBUG   Thread-5  :547 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/miotk/weapons/2hnnxa14/file_stream HTTP/1.1" 200 None
+2020-11-27 23:04:27,619 INFO    Thread-8  :547 [dir_watcher.py:_on_file_modified():226] file/dir modified: /glock/gun/notebooks/wandb/run-20201127_230413-2hnnxa14/files/output.log
+2020-11-27 23:04:28,619 INFO    Thread-8  :547 [dir_watcher.py:_on_file_modified():226] file/dir modified: /glock/gun/notebooks/wandb/run-20201127_230413-2hnnxa14/files/output.log
+2020-11-27 23:04:29,881 DEBUG   HandlerThread:547 [handler.py:handle_request():55] handle_request: status
+2020-11-27 23:04:29,881 DEBUG   SenderThread:547 [sender.py:send():90] send: request
+2020-11-27 23:04:29,881 DEBUG   SenderThread:547 [sender.py:send_request():99] send_request: status
+2020-11-27 23:04:29,884 DEBUG   SenderThread:547 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 23:04:30,063 DEBUG   SenderThread:547 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 23:04:30,620 INFO    Thread-8  :547 [dir_watcher.py:_on_file_modified():226] file/dir modified: /glock/gun/notebooks/wandb/run-20201127_230413-2hnnxa14/files/output.log
+2020-11-27 23:04:30,703 DEBUG   Thread-5  :547 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/miotk/weapons/2hnnxa14/file_stream HTTP/1.1" 200 None
+2020-11-27 23:04:31,406 DEBUG   SenderThread:547 [sender.py:send():90] send: stats
+2020-11-27 23:04:32,929 DEBUG   Thread-5  :547 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/miotk/weapons/2hnnxa14/file_stream HTTP/1.1" 200 None
+2020-11-27 23:04:33,622 INFO    Thread-8  :547 [dir_watcher.py:_on_file_modified():226] file/dir modified: /glock/gun/notebooks/wandb/run-20201127_230413-2hnnxa14/files/output.log
+2020-11-27 23:04:35,623 INFO    Thread-8  :547 [dir_watcher.py:_on_file_modified():226] file/dir modified: /glock/gun/notebooks/wandb/run-20201127_230413-2hnnxa14/files/output.log
+2020-11-27 23:04:35,840 DEBUG   SenderThread:547 [sender.py:send():90] send: stats
+2020-11-27 23:04:35,862 INFO    HandlerThread:547 [handler.py:handle_tbrecord():245] handling tbrecord: tbrecord {
+  log_dir: "/glock/tboard_logs/weapons"
+  save: true
+}
+
+2020-11-27 23:04:35,863 DEBUG   HandlerThread:547 [config_util.py:dict_from_config_file():62] no default config file found in config-defaults.yaml
+2020-11-27 23:04:36,048 DEBUG   Thread-5  :547 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/miotk/weapons/2hnnxa14/file_stream HTTP/1.1" 200 None
+2020-11-27 23:04:36,146 DEBUG   SenderThread:547 [sender.py:send():90] send: tbrecord
+2020-11-27 23:04:36,147 DEBUG   Thread-17 :547 [event_file_loader.py:_make_tf_record_iterator():61] Opening a stub record reader pointing at /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:36,149 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:36,150 DEBUG   SenderThread:547 [sender.py:send():90] send: files
+2020-11-27 23:04:36,150 INFO    SenderThread:547 [sender.py:_save_file():568] saving file events.out.tfevents.1606518275.1fffa4d32af3.512.0 with policy live
+2020-11-27 23:04:36,150 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:36,150 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:36,151 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:36,158 DEBUG   Thread-18 :547 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 23:04:36,353 DEBUG   Thread-18 :547 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 23:04:36,359 DEBUG   Thread-18 :547 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-27 23:04:36,623 INFO    Thread-8  :547 [dir_watcher.py:_on_file_modified():226] file/dir modified: /glock/gun/notebooks/wandb/run-20201127_230413-2hnnxa14/files/output.log
+2020-11-27 23:04:36,623 INFO    Thread-8  :547 [dir_watcher.py:_on_file_created():213] file/dir created: /glock/gun/notebooks/wandb/run-20201127_230413-2hnnxa14/files/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:36,724 DEBUG   Thread-18 :547 [connectionpool.py:_make_request():442] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/miotk/weapons/2hnnxa14/events.out.tfevents.1606518275.1fffa4d32af3.512.0?Expires=1606604676&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=GwOLtwFDF%2BkCSiF2quH1Zn210vutMEtW%2FEEUKj%2F1HX0m3Tgnnr%2BcdLXnkdV%2BIHl%2BJ%2F5tRU%2BCoaldFWA9tkEN%2F2fE1aS%2BFp18neqiyPN5GmIx%2BQsiz3PHIel3eAzM46FgWC3zroY3dOQFqp6gEkdp7b9RcUc%2F9hJBM9XFsadvYRw50AzUYS1T%2F412vgHBmUCPsHGU16f%2BBQosfpJIgQtKbdxvz2zIutKCVR3immCVJFcXqSgPp%2BdPlKzSbDgVc16q%2FsVEmM%2FTFffbUzman2x5AtNMSx%2BXEdxywCjAk%2FJh5LKT3fQXbLv8sCVKeRBJgpFK24jKtjDoeif86Y9BLFU4Kg%3D%3D HTTP/1.1" 200 0
+2020-11-27 23:04:36,726 INFO    Thread-18 :547 [upload_job.py:push():131] Uploaded file /tmp/tmp0k87dgorwandb/30g1tv5i-events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:37,153 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:37,153 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:37,153 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:37,154 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:37,624 INFO    Thread-8  :547 [dir_watcher.py:_on_file_modified():226] file/dir modified: /glock/gun/notebooks/wandb/run-20201127_230413-2hnnxa14/files/output.log
+2020-11-27 23:04:38,155 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:38,155 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:38,155 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:38,156 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:38,325 DEBUG   Thread-5  :547 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/miotk/weapons/2hnnxa14/file_stream HTTP/1.1" 200 None
+2020-11-27 23:04:38,624 INFO    Thread-8  :547 [dir_watcher.py:_on_file_modified():226] file/dir modified: /glock/gun/notebooks/wandb/run-20201127_230413-2hnnxa14/files/output.log
+2020-11-27 23:04:39,157 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:39,157 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:39,157 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:39,158 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:39,624 INFO    Thread-8  :547 [dir_watcher.py:_on_file_modified():226] file/dir modified: /glock/gun/notebooks/wandb/run-20201127_230413-2hnnxa14/files/output.log
+2020-11-27 23:04:40,159 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:40,160 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:40,160 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:40,161 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:40,301 DEBUG   SenderThread:547 [sender.py:send():90] send: stats
+2020-11-27 23:04:40,492 DEBUG   Thread-5  :547 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/miotk/weapons/2hnnxa14/file_stream HTTP/1.1" 200 None
+2020-11-27 23:04:40,625 INFO    Thread-8  :547 [dir_watcher.py:_on_file_modified():226] file/dir modified: /glock/gun/notebooks/wandb/run-20201127_230413-2hnnxa14/files/output.log
+2020-11-27 23:04:41,162 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:41,162 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:41,162 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:41,163 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:41,625 INFO    Thread-8  :547 [dir_watcher.py:_on_file_modified():226] file/dir modified: /glock/gun/notebooks/wandb/run-20201127_230413-2hnnxa14/files/output.log
+2020-11-27 23:04:42,164 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:42,164 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:42,165 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:42,165 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:42,626 INFO    Thread-8  :547 [dir_watcher.py:_on_file_modified():226] file/dir modified: /glock/gun/notebooks/wandb/run-20201127_230413-2hnnxa14/files/output.log
+2020-11-27 23:04:43,166 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:43,166 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:43,166 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:43,167 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:43,626 INFO    Thread-8  :547 [dir_watcher.py:_on_file_modified():226] file/dir modified: /glock/gun/notebooks/wandb/run-20201127_230413-2hnnxa14/files/output.log
+2020-11-27 23:04:44,168 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:44,169 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:44,169 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:44,170 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:44,627 INFO    Thread-8  :547 [dir_watcher.py:_on_file_modified():226] file/dir modified: /glock/gun/notebooks/wandb/run-20201127_230413-2hnnxa14/files/output.log
+2020-11-27 23:04:44,750 DEBUG   SenderThread:547 [sender.py:send():90] send: stats
+2020-11-27 23:04:44,941 DEBUG   Thread-5  :547 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/miotk/weapons/2hnnxa14/file_stream HTTP/1.1" 200 None
+2020-11-27 23:04:45,081 DEBUG   HandlerThread:547 [handler.py:handle_request():55] handle_request: status
+2020-11-27 23:04:45,081 DEBUG   SenderThread:547 [sender.py:send():90] send: request
+2020-11-27 23:04:45,082 DEBUG   SenderThread:547 [sender.py:send_request():99] send_request: status
+2020-11-27 23:04:45,085 DEBUG   SenderThread:547 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 23:04:45,171 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:45,171 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:45,171 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:45,172 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:45,268 DEBUG   SenderThread:547 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 23:04:45,627 INFO    Thread-8  :547 [dir_watcher.py:_on_file_modified():226] file/dir modified: /glock/gun/notebooks/wandb/run-20201127_230413-2hnnxa14/files/output.log
+2020-11-27 23:04:46,173 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:46,173 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:46,173 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:46,174 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:46,628 INFO    Thread-8  :547 [dir_watcher.py:_on_file_modified():226] file/dir modified: /glock/gun/notebooks/wandb/run-20201127_230413-2hnnxa14/files/output.log
+2020-11-27 23:04:47,175 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:47,176 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:47,176 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:47,177 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:47,628 INFO    Thread-8  :547 [dir_watcher.py:_on_file_modified():226] file/dir modified: /glock/gun/notebooks/wandb/run-20201127_230413-2hnnxa14/files/output.log
+2020-11-27 23:04:48,177 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:48,177 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:48,177 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:48,178 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:48,629 INFO    Thread-8  :547 [dir_watcher.py:_on_file_modified():226] file/dir modified: /glock/gun/notebooks/wandb/run-20201127_230413-2hnnxa14/files/output.log
+2020-11-27 23:04:49,179 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:49,179 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:49,179 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:49,180 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:49,210 DEBUG   SenderThread:547 [sender.py:send():90] send: stats
+2020-11-27 23:04:49,400 DEBUG   Thread-5  :547 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/miotk/weapons/2hnnxa14/file_stream HTTP/1.1" 200 None
+2020-11-27 23:04:49,629 INFO    Thread-8  :547 [dir_watcher.py:_on_file_modified():226] file/dir modified: /glock/gun/notebooks/wandb/run-20201127_230413-2hnnxa14/files/output.log
+2020-11-27 23:04:50,181 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:50,181 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:50,181 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:50,182 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:50,629 INFO    Thread-8  :547 [dir_watcher.py:_on_file_modified():226] file/dir modified: /glock/gun/notebooks/wandb/run-20201127_230413-2hnnxa14/files/output.log
+2020-11-27 23:04:51,183 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:51,184 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:51,184 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:51,185 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:51,630 INFO    Thread-8  :547 [dir_watcher.py:_on_file_modified():226] file/dir modified: /glock/gun/notebooks/wandb/run-20201127_230413-2hnnxa14/files/output.log
+2020-11-27 23:04:52,185 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:52,185 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:52,185 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:52,186 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:52,630 INFO    Thread-8  :547 [dir_watcher.py:_on_file_modified():226] file/dir modified: /glock/gun/notebooks/wandb/run-20201127_230413-2hnnxa14/files/output.log
+2020-11-27 23:04:53,187 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:53,188 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:53,188 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:53,189 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:53,340 DEBUG   Thread-5  :547 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/miotk/weapons/2hnnxa14/file_stream HTTP/1.1" 200 None
+2020-11-27 23:04:53,631 INFO    Thread-8  :547 [dir_watcher.py:_on_file_modified():226] file/dir modified: /glock/gun/notebooks/wandb/run-20201127_230413-2hnnxa14/files/output.log
+2020-11-27 23:04:53,656 DEBUG   SenderThread:547 [sender.py:send():90] send: stats
+2020-11-27 23:04:53,757 DEBUG   HandlerThread:547 [handler.py:handle_request():55] handle_request: pause
+2020-11-27 23:04:53,757 INFO    HandlerThread:547 [handler.py:handle_request_pause():226] stopping system metrics thread
+2020-11-27 23:04:53,862 DEBUG   SenderThread:547 [sender.py:send():90] send: stats
+2020-11-27 23:04:54,189 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:54,189 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:54,189 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:54,190 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:55,191 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:55,192 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:55,192 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:55,192 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:56,086 DEBUG   Thread-5  :547 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/miotk/weapons/2hnnxa14/file_stream HTTP/1.1" 200 None
+2020-11-27 23:04:56,193 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:56,193 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:56,193 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:56,194 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:57,195 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:57,196 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:57,196 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:57,197 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:58,198 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:58,198 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:58,199 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:58,199 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:59,201 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:59,201 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:59,201 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:04:59,202 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:00,203 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:00,204 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:00,204 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:00,205 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:00,272 DEBUG   HandlerThread:547 [handler.py:handle_request():55] handle_request: status
+2020-11-27 23:05:00,272 DEBUG   SenderThread:547 [sender.py:send():90] send: request
+2020-11-27 23:05:00,272 DEBUG   SenderThread:547 [sender.py:send_request():99] send_request: status
+2020-11-27 23:05:00,274 DEBUG   SenderThread:547 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 23:05:00,532 DEBUG   SenderThread:547 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 23:05:01,205 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:01,205 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:01,205 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:01,206 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:02,207 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:02,208 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:02,208 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:02,209 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:03,210 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:03,210 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:03,214 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:03,214 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:04,216 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:04,216 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:04,216 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:04,217 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:05,218 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:05,218 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:05,219 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:05,219 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:06,221 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:06,221 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:06,221 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:06,222 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:07,223 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:07,223 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:07,223 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:07,224 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:08,225 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:08,225 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:08,225 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:08,226 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:09,227 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:09,228 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:09,228 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:09,229 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:10,230 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:10,230 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:10,230 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:10,231 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:11,232 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:11,233 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:11,233 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:11,234 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:12,235 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:12,235 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:12,235 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:12,236 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:13,237 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:13,237 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:13,237 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:13,238 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:14,239 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:14,240 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:14,245 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:14,246 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:15,247 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:15,248 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:15,248 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:15,249 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:15,535 DEBUG   HandlerThread:547 [handler.py:handle_request():55] handle_request: status
+2020-11-27 23:05:15,535 DEBUG   SenderThread:547 [sender.py:send():90] send: request
+2020-11-27 23:05:15,536 DEBUG   SenderThread:547 [sender.py:send_request():99] send_request: status
+2020-11-27 23:05:15,538 DEBUG   SenderThread:547 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 23:05:15,761 DEBUG   SenderThread:547 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 23:05:16,249 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:16,249 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:16,249 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:16,250 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:17,251 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:17,252 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:17,252 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:17,253 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:18,253 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:18,253 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:18,253 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:18,254 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:19,255 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:19,256 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:19,256 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:19,257 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:20,258 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:20,258 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:20,261 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:20,262 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:21,263 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:21,263 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:21,264 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:21,264 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:22,265 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:22,265 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:22,265 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:22,266 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:23,267 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:23,268 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:23,268 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:23,269 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:24,270 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:24,270 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:24,270 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:24,271 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:25,272 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:25,272 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:25,274 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:25,275 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:26,276 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:26,276 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:26,276 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:26,277 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:27,278 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:27,279 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:27,279 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:27,280 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:28,281 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:28,281 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:28,281 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:28,282 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:29,283 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:29,284 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:29,284 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:29,285 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:30,286 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:30,286 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:30,286 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:30,287 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:30,764 DEBUG   HandlerThread:547 [handler.py:handle_request():55] handle_request: status
+2020-11-27 23:05:30,765 DEBUG   SenderThread:547 [sender.py:send():90] send: request
+2020-11-27 23:05:30,765 DEBUG   SenderThread:547 [sender.py:send_request():99] send_request: status
+2020-11-27 23:05:30,768 DEBUG   SenderThread:547 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 23:05:30,971 DEBUG   SenderThread:547 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 23:05:31,288 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:31,289 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:31,289 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:31,290 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:32,291 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:32,291 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:32,291 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:32,292 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:33,293 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:33,294 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:33,294 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:33,295 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:34,296 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:34,296 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:34,296 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:34,297 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:34,302 DEBUG   Thread-5  :547 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/miotk/weapons/2hnnxa14/file_stream HTTP/1.1" 200 None
+2020-11-27 23:05:35,298 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:35,299 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:35,299 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:35,300 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:36,301 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:36,301 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:36,301 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:36,302 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:37,303 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:37,303 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:37,304 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:37,304 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:38,305 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:38,305 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:38,305 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:38,306 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:39,307 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:39,308 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:39,308 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:39,309 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:40,309 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:40,309 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:40,309 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:40,310 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:40,693 DEBUG   HandlerThread:547 [handler.py:handle_request():55] handle_request: poll_exit
+2020-11-27 23:05:40,693 DEBUG   SenderThread:547 [sender.py:send():90] send: exit
+2020-11-27 23:05:40,694 INFO    SenderThread:547 [sender.py:send_exit():168] handling exit code: 0
+2020-11-27 23:05:40,695 INFO    SenderThread:547 [sender.py:send_exit():176] send defer
+2020-11-27 23:05:40,695 DEBUG   SenderThread:547 [sender.py:send():90] send: request
+2020-11-27 23:05:40,695 DEBUG   SenderThread:547 [sender.py:send_request():99] send_request: poll_exit
+2020-11-27 23:05:40,695 DEBUG   HandlerThread:547 [handler.py:handle_request():55] handle_request: defer
+2020-11-27 23:05:40,696 INFO    HandlerThread:547 [handler.py:handle_request_defer():69] handle defer: 0
+2020-11-27 23:05:40,696 DEBUG   SenderThread:547 [sender.py:send():90] send: request
+2020-11-27 23:05:40,696 DEBUG   SenderThread:547 [sender.py:send_request():99] send_request: defer
+2020-11-27 23:05:40,696 INFO    SenderThread:547 [sender.py:send_request_defer():185] handle sender defer: 0
+2020-11-27 23:05:40,696 INFO    SenderThread:547 [sender.py:send_request_defer():221] send defer: 1
+2020-11-27 23:05:40,696 DEBUG   HandlerThread:547 [handler.py:handle_request():55] handle_request: defer
+2020-11-27 23:05:40,696 INFO    HandlerThread:547 [handler.py:handle_request_defer():69] handle defer: 1
+2020-11-27 23:05:40,697 DEBUG   SenderThread:547 [sender.py:send():90] send: request
+2020-11-27 23:05:40,697 DEBUG   SenderThread:547 [sender.py:send_request():99] send_request: defer
+2020-11-27 23:05:40,697 INFO    SenderThread:547 [sender.py:send_request_defer():185] handle sender defer: 1
+2020-11-27 23:05:40,697 INFO    SenderThread:547 [sender.py:send_request_defer():221] send defer: 2
+2020-11-27 23:05:40,697 DEBUG   HandlerThread:547 [handler.py:handle_request():55] handle_request: defer
+2020-11-27 23:05:40,697 INFO    HandlerThread:547 [handler.py:handle_request_defer():69] handle defer: 2
+2020-11-27 23:05:41,311 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:41,311 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:41,312 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:41,312 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:42,313 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:42,313 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:42,313 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:42,314 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:43,315 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:43,316 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:43,316 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:43,317 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:44,317 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:44,317 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:44,317 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:44,318 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:45,319 DEBUG   Thread-17 :547 [event_file_loader.py:Load():138] Loading events from /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:45,320 DEBUG   Thread-17 :547 [event_file_loader.py:Load():143] End of file in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:45,320 DEBUG   Thread-17 :547 [event_file_loader.py:Load():151] No more events in /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0
+2020-11-27 23:05:45,321 INFO    Thread-17 :547 [directory_watcher.py:_LoadInternal():125] No path found after /glock/tboard_logs/weapons/events.out.tfevents.1606518275.1fffa4d32af3.512.0

@@ -1,5 +1,4 @@
-FROM nvidia/cuda:10.1-cudnn7-devel
-
+FROM nvidia/cuda:10.1-devel-ubuntu20.04
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt-get install -y \
 	python3-opencv ca-certificates python3-dev git wget sudo  \
@@ -37,7 +36,7 @@ ENV TORCH_CUDA_ARCH_LIST="${TORCH_CUDA_ARCH_LIST}"
 RUN pip install --user -e detectron2_repo
 RUN pip install jupyter
 RUN pip install comet-ml
-
+RUN pip install wandb
 #this exports are for wandb login - otherwise it throws error
 RUN export LC_ALL=C.UTF-8
 RUN export LANG=C.UTF-8

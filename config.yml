@@ -56,7 +56,7 @@ MODEL:
     - - 256
     - - 512
   BACKBONE:
-    FREEZE_AT: 1
+    FREEZE_AT: 2
     NAME: build_resnet_fpn_backbone
   DEVICE: cuda
   FPN:
@@ -193,7 +193,7 @@ MODEL:
     - 0.5
     NAME: StandardROIHeads
     NMS_THRESH_TEST: 0.5
-    NUM_CLASSES: 80
+    NUM_CLASSES: 2
     POSITIVE_FRACTION: 0.25
     PROPOSAL_APPEND_GT: true
     SCORE_THRESH_TEST: 0.05
@@ -273,6 +273,8 @@ MODEL:
 OUTPUT_DIR: /glock/tboard_logs/weapons
 SEED: -1
 SOLVER:
+  AMP:
+    ENABLED: false
   BASE_LR: 0.001
   BIAS_LR_FACTOR: 1.0
   CHECKPOINT_PERIOD: 4000
@@ -316,7 +318,7 @@ TEST:
     - 1100
     - 1200
   DETECTIONS_PER_IMAGE: 10
-  EVAL_PERIOD: 100000000
+  EVAL_PERIOD: 30
   EXPECTED_RESULTS: []
   KEYPOINT_OKS_SIGMAS: []
   PRECISE_BN:

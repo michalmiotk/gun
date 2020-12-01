@@ -1,0 +1,26 @@
+{
+    "os": "Linux-5.4.0-48-generic-x86_64-with-Ubuntu-18.04-bionic",
+    "python": "3.6.9",
+    "heartbeatAt": "2020-11-28T00:30:44.870611",
+    "startedAt": "2020-11-28T00:30:43.927773",
+    "docker": null,
+    "gpu": "GeForce GTX 1080 Ti",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": "10.1.243",
+    "args": [
+        "-f",
+        "/home/appuser/.local/share/jupyter/runtime/kernel-d991f4c7-1c4a-4f3d-847a-8aff7e629f64.json"
+    ],
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/michalmiotk/gun",
+        "commit": "efa508f7dd7d37deaccac92129bbce85256d78f5"
+    },
+    "email": null,
+    "root": "/glock/gun",
+    "host": "dfbd28c33004",
+    "username": "appuser",
+    "executable": "/usr/bin/python3"
+}
