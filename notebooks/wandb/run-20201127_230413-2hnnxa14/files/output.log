@@ -1,413 +1,0 @@
-[32m[11/27 23:04:16 d2.engine.defaults]: [0mModel:
-GeneralizedRCNN(
-  (backbone): FPN(
-    (fpn_lateral2): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1))
-    (fpn_output2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
-    (fpn_lateral3): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1))
-    (fpn_output3): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
-    (fpn_lateral4): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1))
-    (fpn_output4): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
-    (fpn_lateral5): Conv2d(2048, 256, kernel_size=(1, 1), stride=(1, 1))
-    (fpn_output5): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
-    (top_block): LastLevelMaxPool()
-    (bottom_up): ResNet(
-      (stem): BasicStem(
-        (conv1): Conv2d(
-          3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False
-          (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
-        )
-      )
-      (res2): Sequential(
-        (0): BottleneckBlock(
-          (shortcut): Conv2d(
-            64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
-          )
-          (conv1): Conv2d(
-            64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
-          )
-          (conv2): Conv2d(
-            64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
-          )
-          (conv3): Conv2d(
-            64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
-          )
-        )
-        (1): BottleneckBlock(
-          (conv1): Conv2d(
-            256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
-          )
-          (conv2): Conv2d(
-            64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
-          )
-          (conv3): Conv2d(
-            64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
-          )
-        )
-        (2): BottleneckBlock(
-          (conv1): Conv2d(
-            256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
-          )
-          (conv2): Conv2d(
-            64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
-          )
-          (conv3): Conv2d(
-            64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
-          )
-        )
-      )
-      (res3): Sequential(
-        (0): BottleneckBlock(
-          (shortcut): Conv2d(
-            256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False
-            (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
-          )
-          (conv1): Conv2d(
-            256, 128, kernel_size=(1, 1), stride=(2, 2), bias=False
-            (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
-          )
-          (conv2): Conv2d(
-            128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
-          )
-          (conv3): Conv2d(
-            128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
-          )
-        )
-        (1): BottleneckBlock(
-          (conv1): Conv2d(
-            512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
-          )
-          (conv2): Conv2d(
-            128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
-          )
-          (conv3): Conv2d(
-            128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
-          )
-        )
-        (2): BottleneckBlock(
-          (conv1): Conv2d(
-            512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
-          )
-          (conv2): Conv2d(
-            128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
-          )
-          (conv3): Conv2d(
-            128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
-          )
-        )
-        (3): BottleneckBlock(
-          (conv1): Conv2d(
-            512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
-          )
-          (conv2): Conv2d(
-            128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
-          )
-          (conv3): Conv2d(
-            128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
-          )
-        )
-      )
-      (res4): Sequential(
-        (0): BottleneckBlock(
-          (shortcut): Conv2d(
-            512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False
-            (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
-          )
-          (conv1): Conv2d(
-            512, 256, kernel_size=(1, 1), stride=(2, 2), bias=False
-            (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
-          )
-          (conv2): Conv2d(
-            256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
-          )
-          (conv3): Conv2d(
-            256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
-          )
-        )
-        (1): BottleneckBlock(
-          (conv1): Conv2d(
-            1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
-          )
-          (conv2): Conv2d(
-            256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
-          )
-          (conv3): Conv2d(
-            256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
-          )
-        )
-        (2): BottleneckBlock(
-          (conv1): Conv2d(
-            1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
-          )
-          (conv2): Conv2d(
-            256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
-          )
-          (conv3): Conv2d(
-            256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
-          )
-        )
-        (3): BottleneckBlock(
-          (conv1): Conv2d(
-            1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
-          )
-          (conv2): Conv2d(
-            256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
-          )
-          (conv3): Conv2d(
-            256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
-          )
-        )
-        (4): BottleneckBlock(
-          (conv1): Conv2d(
-            1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
-          )
-          (conv2): Conv2d(
-            256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
-          )
-          (conv3): Conv2d(
-            256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
-          )
-        )
-        (5): BottleneckBlock(
-          (conv1): Conv2d(
-            1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
-          )
-          (conv2): Conv2d(
-            256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
-          )
-          (conv3): Conv2d(
-            256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
-          )
-        )
-      )
-      (res5): Sequential(
-        (0): BottleneckBlock(
-          (shortcut): Conv2d(
-            1024, 2048, kernel_size=(1, 1), stride=(2, 2), bias=False
-            (norm): FrozenBatchNorm2d(num_features=2048, eps=1e-05)
-          )
-          (conv1): Conv2d(
-            1024, 512, kernel_size=(1, 1), stride=(2, 2), bias=False
-            (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
-          )
-          (conv2): Conv2d(
-            512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
-          )
-          (conv3): Conv2d(
-            512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=2048, eps=1e-05)
-          )
-        )
-        (1): BottleneckBlock(
-          (conv1): Conv2d(
-            2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
-          )
-          (conv2): Conv2d(
-            512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
-          )
-          (conv3): Conv2d(
-            512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=2048, eps=1e-05)
-          )
-        )
-        (2): BottleneckBlock(
-          (conv1): Conv2d(
-            2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
-          )
-          (conv2): Conv2d(
-            512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
-          )
-          (conv3): Conv2d(
-            512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False
-            (norm): FrozenBatchNorm2d(num_features=2048, eps=1e-05)
-          )
-        )
-      )
-    )
-  )
-  (proposal_generator): RPN(
-    (rpn_head): StandardRPNHead(
-      (conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
-      (objectness_logits): Conv2d(256, 3, kernel_size=(1, 1), stride=(1, 1))
-      (anchor_deltas): Conv2d(256, 12, kernel_size=(1, 1), stride=(1, 1))
-    )
-    (anchor_generator): DefaultAnchorGenerator(
-      (cell_anchors): BufferList()
-    )
-  )
-  (roi_heads): StandardROIHeads(
-    (box_pooler): ROIPooler(
-      (level_poolers): ModuleList(
-        (0): ROIAlign(output_size=(7, 7), spatial_scale=0.25, sampling_ratio=0, aligned=True)
-        (1): ROIAlign(output_size=(7, 7), spatial_scale=0.125, sampling_ratio=0, aligned=True)
-        (2): ROIAlign(output_size=(7, 7), spatial_scale=0.0625, sampling_ratio=0, aligned=True)
-        (3): ROIAlign(output_size=(7, 7), spatial_scale=0.03125, sampling_ratio=0, aligned=True)
-      )
-    )
-    (box_head): FastRCNNConvFCHead(
-      (flatten): Flatten()
-      (fc1): Linear(in_features=12544, out_features=1024, bias=True)
-      (fc_relu1): ReLU()
-      (fc2): Linear(in_features=1024, out_features=1024, bias=True)
-      (fc_relu2): ReLU()
-    )
-    (box_predictor): FastRCNNOutputLayers(
-      (cls_score): Linear(in_features=1024, out_features=81, bias=True)
-      (bbox_pred): Linear(in_features=1024, out_features=320, bias=True)
-    )
-    (mask_pooler): ROIPooler(
-      (level_poolers): ModuleList(
-        (0): ROIAlign(output_size=(14, 14), spatial_scale=0.25, sampling_ratio=0, aligned=True)
-        (1): ROIAlign(output_size=(14, 14), spatial_scale=0.125, sampling_ratio=0, aligned=True)
-        (2): ROIAlign(output_size=(14, 14), spatial_scale=0.0625, sampling_ratio=0, aligned=True)
-        (3): ROIAlign(output_size=(14, 14), spatial_scale=0.03125, sampling_ratio=0, aligned=True)
-      )
-    )
-    (mask_head): MaskRCNNConvUpsampleHead(
-      (mask_fcn1): Conv2d(
-        256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)
-        (activation): ReLU()
-      )
-      (mask_fcn2): Conv2d(
-        256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)
-        (activation): ReLU()
-      )
-      (mask_fcn3): Conv2d(
-        256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)
-        (activation): ReLU()
-      )
-      (mask_fcn4): Conv2d(
-        256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)
-        (activation): ReLU()
-      )
-      (deconv): ConvTranspose2d(256, 256, kernel_size=(2, 2), stride=(2, 2))
-      (deconv_relu): ReLU()
-      (predictor): Conv2d(256, 80, kernel_size=(1, 1), stride=(1, 1))
-    )
-  )
-)
-[32m[11/27 23:04:16 d2.data.dataset_mapper]: [0m[DatasetMapper] Augmentations used in training: [ResizeShortestEdge(short_edge_length=(640, 672, 704, 736, 768, 800), max_size=1333, sample_style='choice'), RandomFlip()]
-[32m[11/27 23:04:27 d2.data.datasets.coco]: [0mLoading /Pobrane/trainval.json takes 10.73 seconds.
-[32m[11/27 23:04:28 d2.data.datasets.coco]: [0mLoaded 69988 images in COCO format from /Pobrane/trainval.json
-[32m[11/27 23:04:30 d2.data.build]: [0mRemoved 0 images with no usable annotations. 69988 images left.
-[32m[11/27 23:04:32 d2.data.build]: [0mDistribution of instances among all 2 categories:
-[36m|  category  | #instances   |  category  | #instances   |
-|:----------:|:-------------|:----------:|:-------------|
-|   weapon   | 226296       |   person   | 37545        |
-|            |              |            |              |
-|   total    | 263841       |            |              |[0m
-[32m[11/27 23:04:32 d2.data.build]: [0mUsing training sampler TrainingSampler
-[32m[11/27 23:04:32 d2.data.common]: [0mSerializing 69988 elements to byte tensors and concatenating them all ...
-[32m[11/27 23:04:34 d2.data.common]: [0mSerialized dataset takes 269.91 MiB
-[32m[11/27 23:04:35 d2.data.dataset_mapper]: [0m[DatasetMapper] Augmentations used in training: [ResizeShortestEdge(short_edge_length=(640, 672, 704, 736, 768, 800), max_size=1333, sample_style='choice'), RandomFlip()]
-[32m[11/27 23:04:35 d2.data.datasets.coco]: [0mLoaded 53 images in COCO format from /Pobrane/test.json
-[32m[11/27 23:04:35 d2.data.build]: [0mDistribution of instances among all 2 categories:
-[36m|  category  | #instances   |  category  | #instances   |
-|:----------:|:-------------|:----------:|:-------------|
-|   weapon   | 53           |   person   | 51           |
-|            |              |            |              |
-|   total    | 104          |            |              |[0m
-[32m[11/27 23:04:35 d2.data.common]: [0mSerializing 53 elements to byte tensors and concatenating them all ...
-[32m[11/27 23:04:35 d2.data.common]: [0mSerialized dataset takes 0.04 MiB
-model_final_f10217.pkl: 0.00B [00:00, ?B/s]model_final_f10217.pkl:   0%|          | 8.19k/178M [00:01<6:51:14, 7.21kB/s]model_final_f10217.pkl:   0%|          | 57.3k/178M [00:01<4:50:59, 10.2kB/s]model_final_f10217.pkl:   0%|          | 123k/178M [00:01<3:26:00, 14.4kB/s] model_final_f10217.pkl:   0%|          | 262k/178M [00:01<2:25:14, 20.4kB/s]model_final_f10217.pkl:   0%|          | 557k/178M [00:01<1:42:01, 29.0kB/s]model_final_f10217.pkl:   1%|          | 1.17M/178M [00:02<1:11:25, 41.2kB/s]model_final_f10217.pkl:   1%|▏         | 2.35M/178M [00:02<49:47, 58.7kB/s]  model_final_f10217.pkl:   2%|▏         | 4.40M/178M [00:02<34:31, 83.7kB/s]model_final_f10217.pkl:   4%|▎         | 6.41M/178M [00:02<23:57, 119kB/s] model_final_f10217.pkl:   5%|▍         | 8.40M/178M [00:02<16:39, 170kB/s]model_final_f10217.pkl:   6%|▌         | 10.3M/178M [00:02<11:36, 241kB/s]model_final_f10217.pkl:   7%|▋         | 12.3M/178M [00:03<08:05, 341kB/s]model_final_f10217.pkl:   8%|▊         | 14.0M/178M [00:03<05:41, 480kB/s]model_final_f10217.pkl:   9%|▉         | 16.1M/178M [00:03<04:00, 673kB/s]model_final_f10217.pkl:  10%|█         | 18.1M/178M [00:03<02:50, 938kB/s]model_final_f10217.pkl:  11%|█▏        | 20.2M/178M [00:03<02:01, 1.30MB/s]model_final_f10217.pkl:  13%|█▎        | 22.2M/178M [00:03<01:28, 1.77MB/s]model_final_f10217.pkl:  14%|█▎        | 24.2M/178M [00:04<01:04, 2.36MB/s]model_final_f10217.pkl:  15%|█▍        | 26.3M/178M [00:04<00:48, 3.11MB/s]model_final_f10217.pkl:  16%|█▌        | 28.4M/178M [00:04<00:37, 3.99MB/s]model_final_f10217.pkl:  17%|█▋        | 30.4M/178M [00:04<00:29, 4.97MB/s]model_final_f10217.pkl:  18%|█▊        | 32.5M/178M [00:04<00:24, 6.01MB/s]model_final_f10217.pkl:  19%|█▉        | 34.6M/178M [00:05<00:20, 6.92MB/s]model_final_f10217.pkl:  21%|██        | 36.6M/178M [00:05<00:17, 7.96MB/s]model_final_f10217.pkl:  22%|██▏       | 38.6M/178M [00:05<00:15, 8.80MB/s]model_final_f10217.pkl:  23%|██▎       | 40.7M/178M [00:05<00:14, 9.52MB/s]model_final_f10217.pkl:  24%|██▍       | 42.8M/178M [00:05<00:13, 10.0MB/s]model_final_f10217.pkl:  25%|██▌       | 44.9M/178M [00:05<00:12, 10.6MB/s]model_final_f10217.pkl:  26%|██▋       | 46.9M/178M [00:06<00:12, 10.9MB/s]model_final_f10217.pkl:  28%|██▊       | 49.0M/178M [00:06<00:11, 11.1MB/s]model_final_f10217.pkl:  29%|██▊       | 51.0M/178M [00:06<00:11, 11.3MB/s]model_final_f10217.pkl:  30%|██▉       | 53.1M/178M [00:06<00:10, 11.4MB/s]model_final_f10217.pkl:  31%|███       | 55.2M/178M [00:06<00:10, 11.4MB/s]model_final_f10217.pkl:  32%|███▏      | 57.1M/178M [00:06<00:10, 11.3MB/s]model_final_f10217.pkl:  33%|███▎      | 59.2M/178M [00:07<00:10, 11.4MB/s]model_final_f10217.pkl:  34%|███▍      | 61.3M/178M [00:07<00:10, 11.6MB/s]model_final_f10217.pkl:  36%|███▌      | 63.3M/178M [00:07<00:09, 11.6MB/s]model_final_f10217.pkl:  37%|███▋      | 65.4M/178M [00:07<00:09, 11.6MB/s]model_final_f10217.pkl:  38%|███▊      | 67.5M/178M [00:07<00:09, 11.6MB/s]model_final_f10217.pkl:  39%|███▉      | 69.6M/178M [00:08<00:09, 11.7MB/s]model_final_f10217.pkl:  40%|████      | 71.7M/178M [00:08<00:09, 11.7MB/s]model_final_f10217.pkl:  41%|████▏     | 73.7M/178M [00:08<00:08, 11.8MB/s]model_final_f10217.pkl:  43%|████▎     | 75.8M/178M [00:08<00:08, 11.8MB/s]model_final_f10217.pkl:  44%|████▍     | 77.9M/178M [00:08<00:07, 13.0MB/s]model_final_f10217.pkl:  45%|████▍     | 79.6M/178M [00:08<00:07, 13.6MB/s]model_final_f10217.pkl:  45%|████▍     | 79.9M/178M [00:08<00:15, 6.49MB/s]model_final_f10217.pkl:  46%|████▌     | 82.0M/178M [00:09<00:12, 7.49MB/s]model_final_f10217.pkl:  47%|████▋     | 84.1M/178M [00:09<00:10, 8.71MB/s]model_final_f10217.pkl:  48%|████▊     | 86.2M/178M [00:09<00:10, 9.09MB/s]model_final_f10217.pkl:  50%|████▉     | 88.2M/178M [00:09<00:08, 9.97MB/s]model_final_f10217.pkl:  51%|█████     | 90.2M/178M [00:09<00:07, 11.6MB/s]model_final_f10217.pkl:  51%|█████     | 90.9M/178M [00:09<00:09, 9.59MB/s]model_final_f10217.pkl:  52%|█████▏    | 92.4M/178M [00:09<00:09, 9.31MB/s]model_final_f10217.pkl:  53%|█████▎    | 94.5M/178M [00:10<00:08, 10.1MB/s]model_final_f10217.pkl:  54%|█████▍    | 96.5M/178M [00:10<00:07, 10.5MB/s]model_final_f10217.pkl:  55%|█████▌    | 98.6M/178M [00:10<00:07, 10.9MB/s]model_final_f10217.pkl:  57%|█████▋    | 101M/178M [00:10<00:06, 11.2MB/s] model_final_f10217.pkl:  58%|█████▊    | 103M/178M [00:10<00:06, 11.4MB/s]model_final_f10217.pkl:  59%|█████▉    | 105M/178M [00:11<00:06, 11.3MB/s]model_final_f10217.pkl:  60%|██████    | 107M/178M [00:11<00:05, 13.0MB/s]model_final_f10217.pkl:  60%|██████    | 108M/178M [00:11<00:07, 9.45MB/s]model_final_f10217.pkl:  61%|██████▏   | 109M/178M [00:11<00:07, 9.76MB/s]model_final_f10217.pkl:  62%|██████▏   | 111M/178M [00:11<00:05, 11.4MB/s]model_final_f10217.pkl:  63%|██████▎   | 112M/178M [00:11<00:07, 8.78MB/s]model_final_f10217.pkl:  64%|██████▎   | 113M/178M [00:11<00:07, 9.05MB/s]model_final_f10217.pkl:  64%|██████▎   | 113M/178M [00:11<00:38, 1.69MB/s]model_final_f10217.pkl:  65%|██████▌   | 116M/178M [00:11<00:26, 2.33MB/s]model_final_f10217.pkl:  66%|██████▌   | 117M/178M [00:12<00:19, 3.10MB/s]model_final_f10217.pkl:  67%|██████▋   | 119M/178M [00:12<00:14, 4.10MB/s]model_final_f10217.pkl:  68%|██████▊   | 121M/178M [00:12<00:11, 5.09MB/s]model_final_f10217.pkl:  68%|██████▊   | 121M/178M [00:12<00:10, 5.60MB/s]model_final_f10217.pkl:  69%|██████▉   | 123M/178M [00:12<00:07, 7.06MB/s]model_final_f10217.pkl:  70%|███████   | 125M/178M [00:12<00:06, 7.88MB/s]model_final_f10217.pkl:  71%|███████   | 126M/178M [00:12<00:06, 7.61MB/s]model_final_f10217.pkl:  72%|███████▏  | 128M/178M [00:12<00:05, 9.22MB/s]model_final_f10217.pkl:  73%|███████▎  | 129M/178M [00:13<00:05, 9.59MB/s]model_final_f10217.pkl:  73%|███████▎  | 130M/178M [00:13<00:05, 8.55MB/s]model_final_f10217.pkl:  74%|███████▍  | 132M/178M [00:13<00:04, 9.86MB/s]model_final_f10217.pkl:  75%|███████▍  | 133M/178M [00:13<00:04, 10.7MB/s]model_final_f10217.pkl:  75%|███████▌  | 134M/178M [00:13<00:05, 8.62MB/s]model_final_f10217.pkl:  76%|███████▋  | 136M/178M [00:13<00:04, 10.2MB/s]model_final_f10217.pkl:  77%|███████▋  | 137M/178M [00:13<00:03, 10.8MB/s]model_final_f10217.pkl:  78%|███████▊  | 138M/178M [00:13<00:04, 9.08MB/s]model_final_f10217.pkl:  79%|███████▊  | 140M/178M [00:13<00:03, 10.5MB/s]model_final_f10217.pkl:  79%|███████▉  | 141M/178M [00:14<00:03, 10.2MB/s]model_final_f10217.pkl:  80%|███████▉  | 142M/178M [00:14<00:03, 9.79MB/s]model_final_f10217.pkl:  81%|████████  | 144M/178M [00:14<00:03, 11.2MB/s]model_final_f10217.pkl:  82%|████████▏ | 146M/178M [00:14<00:02, 11.9MB/s]model_final_f10217.pkl:  82%|████████▏ | 146M/178M [00:14<00:04, 7.73MB/s]model_final_f10217.pkl:  83%|████████▎ | 148M/178M [00:14<00:03, 9.32MB/s]model_final_f10217.pkl:  84%|████████▍ | 150M/178M [00:14<00:02, 10.3MB/s]model_final_f10217.pkl:  84%|████████▍ | 150M/178M [00:14<00:04, 6.35MB/s]model_final_f10217.pkl:  86%|████████▌ | 152M/178M [00:15<00:03, 7.92MB/s]model_final_f10217.pkl:  86%|████████▌ | 153M/178M [00:15<00:02, 8.69MB/s]model_final_f10217.pkl:  87%|████████▋ | 154M/178M [00:15<00:02, 8.67MB/s]model_final_f10217.pkl:  88%|████████▊ | 156M/178M [00:15<00:02, 9.90MB/s]model_final_f10217.pkl:  89%|████████▉ | 158M/178M [00:15<00:01, 11.2MB/s]model_final_f10217.pkl:  89%|████████▉ | 158M/178M [00:15<00:02, 7.63MB/s]model_final_f10217.pkl:  90%|█████████ | 160M/178M [00:15<00:01, 8.93MB/s]model_final_f10217.pkl:  91%|█████████ | 161M/178M [00:15<00:01, 9.05MB/s]model_final_f10217.pkl:  91%|█████████▏| 163M/178M [00:15<00:01, 9.45MB/s]model_final_f10217.pkl:  92%|█████████▏| 164M/178M [00:16<00:01, 10.8MB/s]model_final_f10217.pkl:  93%|█████████▎| 165M/178M [00:16<00:01, 7.47MB/s]model_final_f10217.pkl:  94%|█████████▍| 167M/178M [00:16<00:01, 9.09MB/s]model_final_f10217.pkl:  95%|█████████▍| 168M/178M [00:16<00:00, 10.4MB/s]model_final_f10217.pkl:  95%|█████████▍| 169M/178M [00:16<00:01, 7.71MB/s]model_final_f10217.pkl:  96%|█████████▌| 171M/178M [00:16<00:00, 9.00MB/s]model_final_f10217.pkl:  97%|█████████▋| 172M/178M [00:16<00:00, 8.79MB/s]model_final_f10217.pkl:  97%|█████████▋| 173M/178M [00:16<00:00, 8.84MB/s]model_final_f10217.pkl:  98%|█████████▊| 175M/178M [00:16<00:00, 10.6MB/s]model_final_f10217.pkl:  99%|█████████▉| 176M/178M [00:17<00:00, 10.4MB/s]model_final_f10217.pkl: 100%|█████████▉| 177M/178M [00:17<00:00, 10.2MB/s]model_final_f10217.pkl: 178MB [00:17, 10.3MB/s]                           
-[32m[11/27 23:04:53 d2.engine.train_loop]: [0mStarting training from iteration 0
-[4m[5m[31mERROR[0m [32m[11/27 23:04:53 d2.engine.train_loop]: [0mException during training:
-Traceback (most recent call last):
-  File "/home/appuser/detectron2_repo/detectron2/engine/train_loop.py", line 134, in train
-    self.run_step()
-  File "/home/appuser/detectron2_repo/detectron2/engine/defaults.py", line 423, in run_step
-    self._trainer.run_step()
-  File "/home/appuser/detectron2_repo/detectron2/engine/train_loop.py", line 222, in run_step
-    data = next(self._data_loader_iter)
-  File "/home/appuser/detectron2_repo/detectron2/data/common.py", line 179, in __iter__
-    for d in self.dataset:
-  File "/home/appuser/.local/lib/python3.6/site-packages/torch/utils/data/dataloader.py", line 363, in __next__
-    data = self._next_data()
-  File "/home/appuser/.local/lib/python3.6/site-packages/torch/utils/data/dataloader.py", line 989, in _next_data
-    return self._process_data(data)
-  File "/home/appuser/.local/lib/python3.6/site-packages/torch/utils/data/dataloader.py", line 1014, in _process_data
-    data.reraise()
-  File "/home/appuser/.local/lib/python3.6/site-packages/torch/_utils.py", line 395, in reraise
-    raise self.exc_type(msg)
-AssertionError: Caught AssertionError in DataLoader worker process 0.
-Original Traceback (most recent call last):
-  File "/home/appuser/.local/lib/python3.6/site-packages/torch/utils/data/_utils/worker.py", line 185, in _worker_loop
-    data = fetcher.fetch(index)
-  File "/home/appuser/.local/lib/python3.6/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
-    data = [self.dataset[idx] for idx in possibly_batched_index]
-  File "/home/appuser/.local/lib/python3.6/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
-    data = [self.dataset[idx] for idx in possibly_batched_index]
-  File "/home/appuser/detectron2_repo/detectron2/data/common.py", line 43, in __getitem__
-    data = self._map_func(self._dataset[cur_idx])
-  File "/home/appuser/detectron2_repo/detectron2/utils/serialize.py", line 23, in __call__
-    return self._obj(*args, **kwargs)
-  File "/home/appuser/detectron2_repo/detectron2/data/dataset_mapper.py", line 186, in __call__
-    dataset_dict["instances"] = utils.filter_empty_instances(instances)
-  File "/home/appuser/detectron2_repo/detectron2/data/detection_utils.py", line 481, in filter_empty_instances
-    return instances[m]
-  File "/home/appuser/detectron2_repo/detectron2/structures/instances.py", line 139, in __getitem__
-    ret.set(k, v[item])
-  File "/home/appuser/detectron2_repo/detectron2/structures/masks.py", line 345, in __getitem__
-    item = item.nonzero().squeeze(1).cpu().numpy().tolist()
-  File "/usr/lib/python3.6/warnings.py", line 101, in _showwarnmsg
-    _showwarnmsg_impl(msg)
-  File "/usr/lib/python3.6/warnings.py", line 30, in _showwarnmsg_impl
-    file.write(text)
-  File "/home/appuser/.local/lib/python3.6/site-packages/wandb/sdk/lib/redirect.py", line 91, in new_write
-    cb(name, data)
-  File "/home/appuser/.local/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 600, in _console_callback
-    self._backend.interface.publish_output(name, data)
-  File "/home/appuser/.local/lib/python3.6/site-packages/wandb/sdk/interface/interface.py", line 146, in publish_output
-    self._publish_output(o)
-  File "/home/appuser/.local/lib/python3.6/site-packages/wandb/sdk/interface/interface.py", line 151, in _publish_output
-    self._publish(rec)
-  File "/home/appuser/.local/lib/python3.6/site-packages/wandb/sdk/interface/interface.py", line 432, in _publish
-    if self._process and not self._process.is_alive():
-  File "/usr/lib/python3.6/multiprocessing/process.py", line 134, in is_alive
-    assert self._parent_pid == os.getpid(), 'can only test a child process'
-AssertionError: can only test a child process
-
-[32m[11/27 23:04:53 d2.engine.hooks]: [0mTotal training time: 0:00:00 (0:00:00 on hooks)
-[32m[11/27 23:04:53 d2.utils.events]: [0m iter: 0    lr: N/A  max_mem: 173M

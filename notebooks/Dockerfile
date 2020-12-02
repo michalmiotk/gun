@@ -1,4 +1,4 @@
-FROM nvidia/cuda:10.1-devel-ubuntu20.04
+FROM nvidia/cuda:11.1-devel-ubuntu20.04
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt-get install -y \
 	python3-opencv ca-certificates python3-dev git wget sudo  \
