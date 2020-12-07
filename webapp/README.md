@@ -1,9 +1,6 @@
 # Detectron2 Instance Segmentation
 
 Streamlit App that performs object detection and instance segmentation powered by Detectron2.
-# wandb
-1) create api_key.txt in notebooks  
-2) write {"api_key":"yourapikey"} to api_key.txt  
 
 # Docker
  
