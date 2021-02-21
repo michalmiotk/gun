@@ -43,5 +43,5 @@ RUN export LANG=C.UTF-8
 
 # Set a fixed model cache directory.
 ENV FVCORE_CACHE="/tmp"
-WORKDIR /glock/gun
+WORKDIR /glock/notebooks
 ENTRYPOINT ["jupyter" ,"notebook", "--ip" ,"0.0.0.0", "--no-browser", "--allow-root"]
