@@ -2,10 +2,7 @@
 1) create api_key.txt in notebooks  
 2) write {"api_key":"yourapikey"} to api_key.txt  
 
-# requirements
-pip3 install git+git://github.com/waspinator/pycococreator.git@0.2.0
-pip3 install pycocotools
-# DOCKER
+#DOCKER
 dependencies:  
 hardware:  nvidia gpu  
 software: docker nvidia-docker2 - below are link how to install it:
